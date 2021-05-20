@@ -1,0 +1,335 @@
+----------------------------------------------------------------------
+      R I J K S W A T E R S T A A T 
+
+      waqwnd.pl - Conversion of wind input to SIMONA format 
+----------------------------------------------------------------------
+
+SIMONADIR                   : /opt/simona/simona2016
+
+Input files:
+============
+KNMI file(s)                : WAQH_*
+Wind identification file    : windid
+
+Output files:
+=============
+Wind SDS-file               : SDS-Wind_270_30
+Message print file          : waqwnd-m.Wind_270_30
+Creating default wind to stress input file
+
+Using executable            : /opt/simona/simona2016/bin/linux64/waqwnd.exe
+  
+SIMONA subsystem waqwnd
+   Version simona2016, Revision 6335, (changed)
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    =============================================================
+    %                                                           %
+    %                                                           %
+    %                                                           %
+    %                                                           %
+    %                                                           %
+    %       $$$$$$  $$$  $     $  $$$$$$  $     $  $$$$$$       %
+    %       $        $   $$   $$  $    $  $$    $  $    $       %
+    %       $        $   $ $ $ $  $    $  $ $   $  $    $       %
+    %       $$$$$$   $   $  $  $  $    $  $  $  $  $$$$$$       %
+    %            $   $   $     $  $    $  $   $ $  $    $       %
+    %            $   $   $     $  $    $  $    $$  $    $       %
+    %       $$$$$$  $$$  $     $  $$$$$$  $     $  $    $       %
+    %                                                           %
+    %                                                           %
+    %                                                           %
+    %                                                           %
+    %       Developed by "Rijkswaterstaat"                      %
+    =============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    =============================================================
+    %                                                           %
+    % Note:  when this program ends succesfully                 %
+    %        the following string will be printed               %
+    %        at the end of this message file:                   %
+    %                                                           %
+    %   ******  SIMONA --- program ended successfully  ******   %
+    %                                                           %
+    =============================================================
+
+
+
+
+
+   Sub-system = WAQWND
+   Version    = 12.16
+   User-ID    = gautier
+   RunDate    = 26-04-2017
+   RunTime    = 10:27:34
+
+   Size of IBUFFR (bufsize) =     10000000   (=           10  Megawords)
+ 
+ 
+ wawgam: Start forecast date (YYYYMMDD):     20600101
+ wawgam: Start forecast time (HHMM)    :            0
+ -----------------------------------------------
+ Wind Speeds are found and will be used
+ -----------------------------------------------
+ wawcgd: --> Input defined on non-staggered grid
+ Space Varying Wind and Pressure data
+ are available at the following times:
+
+
+ Time   0.0000000E+00  is read from: WAQH_INP_205001010000_00000
+ Time    30.00000      is read from: WAQH_INP_205001010030_00000
+ Time    60.00000      is read from: WAQH_INP_205001010100_00000
+ Time    90.00000      is read from: WAQH_INP_205001010130_00000
+ Time    120.0000      is read from: WAQH_INP_205001010200_00000
+ Time    150.0000      is read from: WAQH_INP_205001010230_00000
+ Time    180.0000      is read from: WAQH_INP_205001010300_00000
+ Time    210.0000      is read from: WAQH_INP_205001010330_00000
+ Time    240.0000      is read from: WAQH_INP_205001010400_00000
+ Time    270.0000      is read from: WAQH_INP_205001010430_00000
+ Time    300.0000      is read from: WAQH_INP_205001010500_00000
+ Time    330.0000      is read from: WAQH_INP_205001010530_00000
+ Time    360.0000      is read from: WAQH_INP_205001010600_00000
+ Time    390.0000      is read from: WAQH_INP_205001010630_00000
+ Time    420.0000      is read from: WAQH_INP_205001010700_00000
+ Time    450.0000      is read from: WAQH_INP_205001010730_00000
+ Time    480.0000      is read from: WAQH_INP_205001010800_00000
+ Time    510.0000      is read from: WAQH_INP_205001010830_00000
+ Time    540.0000      is read from: WAQH_INP_205001010900_00000
+ Time    570.0000      is read from: WAQH_INP_205001010930_00000
+ Time    600.0000      is read from: WAQH_INP_205001011000_00000
+ Time    630.0000      is read from: WAQH_INP_205001011030_00000
+ Time    660.0000      is read from: WAQH_INP_205001011100_00000
+ Time    690.0000      is read from: WAQH_INP_205001011130_00000
+ Time    720.0000      is read from: WAQH_INP_205001011200_00000
+ Time    750.0000      is read from: WAQH_INP_205001011230_00000
+ Time    780.0000      is read from: WAQH_INP_205001011300_00000
+ Time    810.0000      is read from: WAQH_INP_205001011330_00000
+ Time    840.0000      is read from: WAQH_INP_205001011400_00000
+ Time    870.0000      is read from: WAQH_INP_205001011430_00000
+ Time    900.0000      is read from: WAQH_INP_205001011500_00000
+ Time    930.0000      is read from: WAQH_INP_205001011530_00000
+ Time    960.0000      is read from: WAQH_INP_205001011600_00000
+ Time    990.0000      is read from: WAQH_INP_205001011630_00000
+ Time    1020.000      is read from: WAQH_INP_205001011700_00000
+ Time    1050.000      is read from: WAQH_INP_205001011730_00000
+ Time    1080.000      is read from: WAQH_INP_205001011800_00000
+ Time    1110.000      is read from: WAQH_INP_205001011830_00000
+ Time    1140.000      is read from: WAQH_INP_205001011900_00000
+ Time    1170.000      is read from: WAQH_INP_205001011930_00000
+ Time    1200.000      is read from: WAQH_INP_205001012000_00000
+ Time    1230.000      is read from: WAQH_INP_205001012030_00000
+ Time    1260.000      is read from: WAQH_INP_205001012100_00000
+ Time    1290.000      is read from: WAQH_INP_205001012130_00000
+ Time    1320.000      is read from: WAQH_INP_205001012200_00000
+ Time    1350.000      is read from: WAQH_INP_205001012230_00000
+ Time    1380.000      is read from: WAQH_INP_205001012300_00000
+ Time    1410.000      is read from: WAQH_INP_205001012330_00000
+ Time    1440.000      is read from: WAQH_INP_205001020000_00000
+ Time    1470.000      is read from: WAQH_INP_205001020030_00000
+ Time    1500.000      is read from: WAQH_INP_205001020100_00000
+ Time    1530.000      is read from: WAQH_INP_205001020130_00000
+ Time    1560.000      is read from: WAQH_INP_205001020200_00000
+ Time    1590.000      is read from: WAQH_INP_205001020230_00000
+ Time    1620.000      is read from: WAQH_INP_205001020300_00000
+ Time    1650.000      is read from: WAQH_INP_205001020330_00000
+ Time    1680.000      is read from: WAQH_INP_205001020400_00000
+ Time    1710.000      is read from: WAQH_INP_205001020430_00000
+ Time    1740.000      is read from: WAQH_INP_205001020500_00000
+ Time    1770.000      is read from: WAQH_INP_205001020530_00000
+ Time    1800.000      is read from: WAQH_INP_205001020600_00000
+ Time    1830.000      is read from: WAQH_INP_205001020630_00000
+ Time    1860.000      is read from: WAQH_INP_205001020700_00000
+ Time    1890.000      is read from: WAQH_INP_205001020730_00000
+ Time    1920.000      is read from: WAQH_INP_205001020800_00000
+ Time    1950.000      is read from: WAQH_INP_205001020830_00000
+ Time    1980.000      is read from: WAQH_INP_205001020900_00000
+ Time    2010.000      is read from: WAQH_INP_205001020930_00000
+ Time    2040.000      is read from: WAQH_INP_205001021000_00000
+ Time    2070.000      is read from: WAQH_INP_205001021030_00000
+ Time    2100.000      is read from: WAQH_INP_205001021100_00000
+ Time    2130.000      is read from: WAQH_INP_205001021130_00000
+ Time    2160.000      is read from: WAQH_INP_205001021200_00000
+ Time    2190.000      is read from: WAQH_INP_205001021230_00000
+ Time    2220.000      is read from: WAQH_INP_205001021300_00000
+ Time    2250.000      is read from: WAQH_INP_205001021330_00000
+ Time    2280.000      is read from: WAQH_INP_205001021400_00000
+ Time    2310.000      is read from: WAQH_INP_205001021430_00000
+ Time    2340.000      is read from: WAQH_INP_205001021500_00000
+ Time    2370.000      is read from: WAQH_INP_205001021530_00000
+ Time    2400.000      is read from: WAQH_INP_205001021600_00000
+ Time    2430.000      is read from: WAQH_INP_205001021630_00000
+ Time    2460.000      is read from: WAQH_INP_205001021700_00000
+ Time    2490.000      is read from: WAQH_INP_205001021730_00000
+ Time    2520.000      is read from: WAQH_INP_205001021800_00000
+ Time    2550.000      is read from: WAQH_INP_205001021830_00000
+ Time    2580.000      is read from: WAQH_INP_205001021900_00000
+ Time    2610.000      is read from: WAQH_INP_205001021930_00000
+ Time    2640.000      is read from: WAQH_INP_205001022000_00000
+ Time    2670.000      is read from: WAQH_INP_205001022030_00000
+ Time    2700.000      is read from: WAQH_INP_205001022100_00000
+ Time    2730.000      is read from: WAQH_INP_205001022130_00000
+ Time    2760.000      is read from: WAQH_INP_205001022200_00000
+ Time    2790.000      is read from: WAQH_INP_205001022230_00000
+ Time    2820.000      is read from: WAQH_INP_205001022300_00000
+ Time    2850.000      is read from: WAQH_INP_205001022330_00000
+ Time    2880.000      is read from: WAQH_INP_205001030000_00000
+ Time    2910.000      is read from: WAQH_INP_205001030030_00000
+ Time    2940.000      is read from: WAQH_INP_205001030100_00000
+ Time    2970.000      is read from: WAQH_INP_205001030130_00000
+ Time    3000.000      is read from: WAQH_INP_205001030200_00000
+ Time    3030.000      is read from: WAQH_INP_205001030230_00000
+ Time    3060.000      is read from: WAQH_INP_205001030300_00000
+ Time    3090.000      is read from: WAQH_INP_205001030330_00000
+ Time    3120.000      is read from: WAQH_INP_205001030400_00000
+ Time    3150.000      is read from: WAQH_INP_205001030430_00000
+ Time    3180.000      is read from: WAQH_INP_205001030500_00000
+ Time    3210.000      is read from: WAQH_INP_205001030530_00000
+ Time    3240.000      is read from: WAQH_INP_205001030600_00000
+ Time    3270.000      is read from: WAQH_INP_205001030630_00000
+ Time    3300.000      is read from: WAQH_INP_205001030700_00000
+ Time    3330.000      is read from: WAQH_INP_205001030730_00000
+ Time    3360.000      is read from: WAQH_INP_205001030800_00000
+ Time    3390.000      is read from: WAQH_INP_205001030830_00000
+ Time    3420.000      is read from: WAQH_INP_205001030900_00000
+ Time    3450.000      is read from: WAQH_INP_205001030930_00000
+ Time    3480.000      is read from: WAQH_INP_205001031000_00000
+ Time    3510.000      is read from: WAQH_INP_205001031030_00000
+ Time    3540.000      is read from: WAQH_INP_205001031100_00000
+ Time    3570.000      is read from: WAQH_INP_205001031130_00000
+ Time    3600.000      is read from: WAQH_INP_205001031200_00000
+ Time    3630.000      is read from: WAQH_INP_205001031230_00000
+ Time    3660.000      is read from: WAQH_INP_205001031300_00000
+ Time    3690.000      is read from: WAQH_INP_205001031330_00000
+ Time    3720.000      is read from: WAQH_INP_205001031400_00000
+ Time    3750.000      is read from: WAQH_INP_205001031430_00000
+ Time    3780.000      is read from: WAQH_INP_205001031500_00000
+ Time    3810.000      is read from: WAQH_INP_205001031530_00000
+ Time    3840.000      is read from: WAQH_INP_205001031600_00000
+ Time    3870.000      is read from: WAQH_INP_205001031630_00000
+ Time    3900.000      is read from: WAQH_INP_205001031700_00000
+ Time    3930.000      is read from: WAQH_INP_205001031730_00000
+ Time    3960.000      is read from: WAQH_INP_205001031800_00000
+ Time    3990.000      is read from: WAQH_INP_205001031830_00000
+ Time    4020.000      is read from: WAQH_INP_205001031900_00000
+ Time    4050.000      is read from: WAQH_INP_205001031930_00000
+ Time    4080.000      is read from: WAQH_INP_205001032000_00000
+ Time    4110.000      is read from: WAQH_INP_205001032030_00000
+ Time    4140.000      is read from: WAQH_INP_205001032100_00000
+ Time    4170.000      is read from: WAQH_INP_205001032130_00000
+ Time    4200.000      is read from: WAQH_INP_205001032200_00000
+ Time    4230.000      is read from: WAQH_INP_205001032230_00000
+ Time    4260.000      is read from: WAQH_INP_205001032300_00000
+ Time    4290.000      is read from: WAQH_INP_205001032330_00000
+ Time    4320.000      is read from: WAQH_INP_205001040000_00000
+ Time    4350.000      is read from: WAQH_INP_205001040030_00000
+ Time    4380.000      is read from: WAQH_INP_205001040100_00000
+ Time    4410.000      is read from: WAQH_INP_205001040130_00000
+ Time    4440.000      is read from: WAQH_INP_205001040200_00000
+ Time    4470.000      is read from: WAQH_INP_205001040230_00000
+ Time    4500.000      is read from: WAQH_INP_205001040300_00000
+ Time    4530.000      is read from: WAQH_INP_205001040330_00000
+ Time    4560.000      is read from: WAQH_INP_205001040400_00000
+ Time    4590.000      is read from: WAQH_INP_205001040430_00000
+ Time    4620.000      is read from: WAQH_INP_205001040500_00000
+ Time    4650.000      is read from: WAQH_INP_205001040530_00000
+ Time    4680.000      is read from: WAQH_INP_205001040600_00000
+ Time    4710.000      is read from: WAQH_INP_205001040630_00000
+ Time    4740.000      is read from: WAQH_INP_205001040700_00000
+ Time    4770.000      is read from: WAQH_INP_205001040730_00000
+ Time    4800.000      is read from: WAQH_INP_205001040800_00000
+ Time    4830.000      is read from: WAQH_INP_205001040830_00000
+ Time    4860.000      is read from: WAQH_INP_205001040900_00000
+ Time    4890.000      is read from: WAQH_INP_205001040930_00000
+ Time    4920.000      is read from: WAQH_INP_205001041000_00000
+ Time    4950.000      is read from: WAQH_INP_205001041030_00000
+ Time    4980.000      is read from: WAQH_INP_205001041100_00000
+ Time    5010.000      is read from: WAQH_INP_205001041130_00000
+ Time    5040.000      is read from: WAQH_INP_205001041200_00000
+ Time    5070.000      is read from: WAQH_INP_205001041230_00000
+ Time    5100.000      is read from: WAQH_INP_205001041300_00000
+ Time    5130.000      is read from: WAQH_INP_205001041330_00000
+ Time    5160.000      is read from: WAQH_INP_205001041400_00000
+ Time    5190.000      is read from: WAQH_INP_205001041430_00000
+ Time    5220.000      is read from: WAQH_INP_205001041500_00000
+ Time    5250.000      is read from: WAQH_INP_205001041530_00000
+ Time    5280.000      is read from: WAQH_INP_205001041600_00000
+ Time    5310.000      is read from: WAQH_INP_205001041630_00000
+ Time    5340.000      is read from: WAQH_INP_205001041700_00000
+ Time    5370.000      is read from: WAQH_INP_205001041730_00000
+ Time    5400.000      is read from: WAQH_INP_205001041800_00000
+ Time    5430.000      is read from: WAQH_INP_205001041830_00000
+ Time    5460.000      is read from: WAQH_INP_205001041900_00000
+ Time    5490.000      is read from: WAQH_INP_205001041930_00000
+ Time    5520.000      is read from: WAQH_INP_205001042000_00000
+ Time    5550.000      is read from: WAQH_INP_205001042030_00000
+ Time    5580.000      is read from: WAQH_INP_205001042100_00000
+ Time    5610.000      is read from: WAQH_INP_205001042130_00000
+ Time    5640.000      is read from: WAQH_INP_205001042200_00000
+ Time    5670.000      is read from: WAQH_INP_205001042230_00000
+ Time    5700.000      is read from: WAQH_INP_205001042300_00000
+ Time    5730.000      is read from: WAQH_INP_205001042330_00000
+ Time    5760.000      is read from: WAQH_INP_205001050000_00000
+ Time    5790.000      is read from: WAQH_INP_205001050030_00000
+ Time    5820.000      is read from: WAQH_INP_205001050100_00000
+ Time    5850.000      is read from: WAQH_INP_205001050130_00000
+ Time    5880.000      is read from: WAQH_INP_205001050200_00000
+ Time    5910.000      is read from: WAQH_INP_205001050230_00000
+ Time    5940.000      is read from: WAQH_INP_205001050300_00000
+ Time    5970.000      is read from: WAQH_INP_205001050330_00000
+ Time    6000.000      is read from: WAQH_INP_205001050400_00000
+
+
+ Normal end of program WAQWND
+
+
+
+    =============================================================
+    %                                                           %
+    %   ******  SIMONA --- program ended successfully  ******   %
+    %                                                           %
+    =============================================================

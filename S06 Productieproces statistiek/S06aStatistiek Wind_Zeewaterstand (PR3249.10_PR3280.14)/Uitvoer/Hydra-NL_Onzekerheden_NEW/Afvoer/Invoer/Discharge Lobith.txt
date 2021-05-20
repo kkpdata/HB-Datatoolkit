@@ -1,0 +1,19 @@
+% Status data	Final data d.d. 14-07-2015. bron: Prinsen et al. 2015 (1220082-010)					
+% Directions:	Omnidirectional					
+% Distribution type:	Exceedance Probability Table					
+%						
+% Note:	The exceedance probability table has the unit given for the discharge variable. In this case [1 months]					
+%						
+%Discharge Lobith	Exceedance probability					
+5940	0.083333333					
+7970	0.033333333					
+9130	0.016666667					
+10910	0.005555556					
+12770	0.001666667					
+14000	0.000555556					
+14840	0.000166667					
+14970	0.000133333					
+15520	5.55556E-05					
+16270	1.66667E-05					
+16960	5.55556E-06					
+17710	1.66667E-06					

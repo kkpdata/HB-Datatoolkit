@@ -1,0 +1,31 @@
+function [TreeksChbab, ovkansenAfvoerExOnzHeidChbab, ovkansenAfvoerMetOnzHeidChbab]= bepaalGegevensChbab2015(...
+    keuzeStation);
+
+
+switch keuzeStation
+    case 1  %Lobith
+        tabelChbab =[...
+            2       5940	5280	6600	0	340 	5941
+            5       7970	7110	8840	0	440     7949
+            10      9130	8160	10100	0	500     9172
+            30      10910	9730	12080	0	600 	10978
+            100     12770	11400	14150	0	700     12854
+            300     14000	12910	15100	0	560     14107
+            1000	14840	13620	16050	0	620 	15035
+            1250	14970	13720	16230	0	640     15191
+            3000	15520	14060	16980	0	750 	15802
+            10000	16270	14450	18100	0	930     16682
+            30000	16960	14750	19160	0	1120	17535
+            100000	17710	15060	20350	0	1350	18516];
+
+    case 2  %Olst
+
+    case 3  %Borgharen
+
+    case 4  %Lith
+
+    case 5  %Dalfsen
+
+end
+
+Treeks = 

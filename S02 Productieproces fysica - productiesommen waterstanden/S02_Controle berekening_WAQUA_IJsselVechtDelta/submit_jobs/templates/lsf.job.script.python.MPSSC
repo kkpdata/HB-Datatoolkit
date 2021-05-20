@@ -1,0 +1,15 @@
+#!/bin/bash
+#$ -cwd
+#$ -N python
+
+#BSUB -J $ID$PP
+#BSUB -oo $ID$PP.o%J
+#BSUB -eo $ID$PP.e%J
+#BSUB -n $NUMCORES$
+
+export PATH=/opt/conda/envs/myapp/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PYTHONPATH=/data/computations/python:$PYTHONPATH
+
+RUNID=$ID$
+
+./run_python.sh ${RUNID}

@@ -1,0 +1,18 @@
+% 
+% Overschrijdingskansen piekwaarde Volkerak-Zoommeer, zonder statistische onzekerheid
+% 
+% 
+% Auteur:  C.P.M. Geerse.
+% Project: PR3598.10
+%
+% Basisduur                  B = 30  dagen
+% Verticale knikparameter   av = 0.1 [-]
+% Horizontale knikparameter ah = 0.5 [-]
+%
+% 
+%        Piekwaarde           overschrijdingskans
+%           [m+NAP]                    [-]
+           0.050                 1.000E+00
+           0.120                 6.000E-01
+           0.940                 1.667E-05
+           1.12                  1.667E-06

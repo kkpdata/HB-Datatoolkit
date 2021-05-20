@@ -1,0 +1,11 @@
+* De conditionele overschrijdingskans van de zeewaterstand METZONDER statistische onzekerheid gegeven de windrichting
+* voor een 12-uursperiode te STATION, gelegen op locatie: 
+* LOCX, LOCY
+* 
+* Het waterstandsbereik waarvoor de overschrijdingskansen zijn gegeven is het hoogwater 2011 tot 8.00 m + NAP
+* met een stapgrootte van 0.1 m. De laatste stapgrootte kan afwijken om op 8.00 m uit te komen.
+*
+* Door: G.W.F. Rongen van HKV lijn in water
+* Project: PR3280.10
+*
+* m (m+NAP) 30              60              90              120             150             180             210             240             270             300             330             360

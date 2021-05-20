@@ -1,0 +1,4 @@
+KNMI file
+lat/lon
+1 jan 00:00 tot 5 jan 05:00 2050
+

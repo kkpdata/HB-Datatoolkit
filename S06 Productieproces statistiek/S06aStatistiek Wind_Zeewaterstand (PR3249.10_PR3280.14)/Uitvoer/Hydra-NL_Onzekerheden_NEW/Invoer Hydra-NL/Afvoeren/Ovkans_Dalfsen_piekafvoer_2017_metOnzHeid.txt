@@ -1,0 +1,51 @@
+*
+* Overschrijdingskansen piekwaarde Dafsen (Hydra-NL). Met statistische onzekerheid.
+*
+* Door: C.P.M. Geerse van HKV lijn in water
+* Datum: 11 december 2015
+*
+* Zie voor beschrijving het rapport:
+* Werkwijze uitintegreren onzekerheden basisstochasten voor Hydra-NL.
+* Afvoeren, meerpeilen, zeewaterstanden en windsnelheden. 
+* Chris Geerse. HKV Lijn in Water, december 2015.
+* 
+* Basisduur trapezia: B = 30 dagen.
+* 
+* Piekwaarde  Overschrijdingskans
+*    [m3/s]      [-]
+          0      1.0
+        180      1.667E-01
+        350      6.257E-03
+        360      5.323E-03
+        380      3.842E-03
+        400      2.767E-03
+        420      2.001E-03
+        440      1.459E-03
+        460      1.077E-03
+        480      8.041E-04
+        500      6.070E-04
+        520      4.623E-04
+        540      3.547E-04
+        560      2.739E-04
+        580      2.126E-04
+        600      1.659E-04
+        620      1.300E-04
+        640      1.023E-04
+        660      8.088E-05
+        680      6.416E-05
+        700      5.110E-05
+        720      4.084E-05
+        740      3.276E-05
+        760      2.636E-05
+        780      2.128E-05
+        800      1.724E-05
+        820      1.400E-05
+        840      1.141E-05
+        860      9.317E-06
+        880      7.630E-06
+        900      6.265E-06
+        920      5.157E-06
+        940      4.254E-06
+        960      3.517E-06
+        980      2.914E-06
+        1000     2.420E-06

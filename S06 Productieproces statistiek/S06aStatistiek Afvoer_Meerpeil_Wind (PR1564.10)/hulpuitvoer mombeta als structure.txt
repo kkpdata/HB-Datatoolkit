@@ -1,0 +1,102 @@
+
+drempel = 180;          % variabele voor drempel waarde 
+zpot = 15;          %zichtduur 
+zB = 15;              %halve breedte van geselecteerde tijdreeks (default=zpot) NB zB>zpot kan soms crash geven
+ref_niv = 0;       %referentieniveau van waaraf wordt opgeschaald
+piekduur = 0.9999; %duur waarmee pieken/dalen worden verbreed, 0< piekduur <1; default 0.9999.
+nstapv = 10;      %interval [0,1] wordt opgevuld met nstapv deelintervallen
+fig_golven_verbreed = 0; %indien 1 wel plaatjes verbrede golven, indien 0 dan niet
+fig_golven_rel = 1;      %indien 1 wel plaatje relatieve golven, indien 0 dan niet
+fig_opschaling = 1;      %indien 1 wel plaatje standaardgolf uit opschaling, indien 0 dan niet
+%betaverdeling
+a = 4.1;
+b = 3.95;
+nstapx_beta = 100;
+nstapy_beta = 100;
+Bbeta = 30;         %basisduur beta-golven
+%parameters trapezia
+B = 30;             %basisduur trapezia
+topduur_inv = ...
+    [0, 720;        %eerste kolom moet toenemend zijn, voor tweede geldt dat niet
+    180, 48;
+    1000, 48]
+%parameters afvoer
+stapy = 50;      %stapgrootte voor kansvectoren (y is bijv piekafvoer of afvoerniveau)
+%(NB hele kleine stapgrootte, zeg stapy = 1, geeft beste overeenkomst tussen trapezia en beta-vormen)
+ymax = 600;     %maximum van vector
+ovkanspiek_inv = ...
+    [0, 1;
+    180, 0.16667;
+    550, 1.3333e-4]
+
+
+
+[berek_trap.y,berek_trap.by, berek_trap.fy_piek, ...
+    berek_trap.Gy_piek, berek_trap.fy_mom, berek_trap.Gy_mom]
+
+	        0  720.0000    0.0078    1.0000    0.0108    1.0000
+	   50.0000  533.3333    0.0048    0.6079    0.0053    0.4580
+	  100.0000  346.6667    0.0029    0.3696    0.0024    0.1926
+	  150.0000  160.0000    0.0018    0.2247    0.0010    0.0712
+	  200.0000   48.0000    0.0017    0.1134    0.0003    0.0226
+	  250.0000   48.0000    0.0007    0.0432    0.0001    0.0079
+	  300.0000   48.0000    0.0002    0.0165    0.0000    0.0028
+	  350.0000   48.0000    0.0001    0.0063    0.0000    0.0010
+	  400.0000   48.0000    0.0000    0.0024    0.0000    0.0004
+	  450.0000   48.0000    0.0000    0.0009    0.0000    0.0001
+	  500.0000   48.0000    0.0000    0.0003    0.0000    0.0000
+	  550.0000   48.0000    0.0000    0.0001    0.0000    0.0000
+	  600.0000   48.0000    0.0000    0.0001    0.0000    0.0000
+	  
+	  
+	  OUD: [fy_mombeta(:,1) fy_mombeta(:,2)*stapy, Gy_mombeta]
+	  
+               0    0.8021         0    1.0000
+	     50.0000    0.1037   50.0000    0.1979
+	    100.0000    0.0547  100.0000    0.0942
+	    150.0000    0.0260  150.0000    0.0395
+	    200.0000    0.0088  200.0000    0.0135
+	    250.0000    0.0030  250.0000    0.0047
+	    300.0000    0.0011  300.0000    0.0017
+	    350.0000    0.0004  350.0000    0.0006
+	    400.0000    0.0001  400.0000    0.0002
+	    450.0000    0.0000  450.0000    0.0001
+	    500.0000    0.0000  500.0000    0.0000
+	    550.0000    0.0000  550.0000    0.0000
+	    600.0000         0  600.0000         0
+
+
+
+[mombeta.y mombeta.fy*stapy mombeta.Gy]
+
+ans =
+
+         0    0.8021    1.0000
+   50.0000    0.1037    0.1979
+  100.0000    0.0547    0.0942
+  150.0000    0.0260    0.0395
+  200.0000    0.0088    0.0135
+  250.0000    0.0030    0.0047
+  300.0000    0.0011    0.0017
+  350.0000    0.0004    0.0006
+  400.0000    0.0001    0.0002
+  450.0000    0.0000    0.0001
+  500.0000    0.0000    0.0000
+  550.0000    0.0000    0.0000
+  600.0000         0         0
+
+
+>> [piekkansen.y piekkansen.fy_piek piekkansen.Gy_piek]
+        0    0.0078    1.0000
+   50.0000    0.0048    0.6079
+  100.0000    0.0029    0.3696
+  150.0000    0.0018    0.2247
+  200.0000    0.0017    0.1134
+  250.0000    0.0007    0.0432
+  300.0000    0.0002    0.0165
+  350.0000    0.0001    0.0063
+  400.0000    0.0000    0.0024
+  450.0000    0.0000    0.0009
+  500.0000    0.0000    0.0003
+  550.0000    0.0000    0.0001
+  600.0000    0.0000    0.0001

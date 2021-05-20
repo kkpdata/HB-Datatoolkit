@@ -1,0 +1,144 @@
+% Routine om tijdreeks naar maandwaarden te converteren.
+% 
+% Door:  Chris Geerse
+% Datum: september 2011
+
+
+%==========================================================================
+% Algemene zaken
+%==========================================================================
+
+clc; clear all; close all
+addpath 'Hulproutines\'
+
+%==========================================================================
+% Algemene invoer(parameters)
+%==========================================================================
+%Invoerparameters
+invoerpad               =   'Invoer\';
+uitvoerpad              =   'Uitvoer\';
+uitvoerpad_figuren      =   'Figuren\';
+
+%Data bestanden
+infile_data_VZM         =   'data_KREEKRND_RAKZD_1998_2011_TEST.txt';
+% infile_data_Lith             =   'Dagafvoer Lith, 13-10-1999 (decim afgekapt) excl uurtijdstip.txt';
+
+
+%==========================================================================
+% VZM
+%==========================================================================
+
+%Inlezen data
+filenaam_data                            = fullfile(invoerpad, infile_data_VZM);
+[jaar,maand,dag,uur,mp_uur_ND,mp_uur_ZD] = textread(filenaam_data,'%f %f %f %f %f %f','delimiter',' ','commentstyle','matlab');
+
+
+
+
+
+% %==========================================================================
+% % Aggregeren naar maandwaarden
+% % Nadien aanwezig in data_maand: 
+% % jaar_nw, maand_nw, min, max, mean, median, mode, std, aantal_in_maand.
+% %==========================================================================
+% % Van elke waarneming moet beschikbaar zijn:
+% % data
+% % jaar
+% % maand
+% 
+% [Lobith_maand] = aggregeer_naar_maand(qlob, jaar, maand);
+% 
+% jaar_nw            = Lobith_maand(:,1);
+% maand_nw           = Lobith_maand(:,2);
+% qlob_max           = Lobith_maand(:,4);
+% 
+% inhoud_tabel_Lob   = [jaar_nw, maand_nw, qlob_max];
+% 
+% save([uitvoerpad,'maandmaxima_Lobith.txt'],'inhoud_tabel_Lob','-ascii')
+
+
+
+
+% %==========================================================================
+% % Lith
+% %==========================================================================
+% 
+% %Inlezen geldige data Lith (hele jaren)
+% %NB: eerdere variabelen jaar, maand, dag worden overschreven.
+% 
+% [jaar,maand,dag,datum,qlith] = inlezen_Lith(invoerpad, infile_data_Lith);
+% 
+% %==========================================================================
+% % Aggregeren naar maandwaarden (gegevens analoog aan Lobith)
+% 
+% [Lith_maand] = aggregeer_naar_maand(qlith, jaar, maand);
+% 
+% jaar_nw            = Lith_maand(:,1);
+% maand_nw           = Lith_maand(:,2);
+% qlith_max          = Lith_maand(:,4);
+% 
+% inhoud_tabel_Lith   = [jaar_nw, maand_nw, qlith_max];
+% 
+% save([uitvoerpad,'maandmaxima_Lith.txt'],'inhoud_tabel_Lith','-ascii')
+% 
+% 
+% %==========================================================================
+% % Dalfsen
+% %==========================================================================
+% %Inlezen geldige data Dalfsen (hele jaren).
+% 
+% [jaar,maand,dag,datum,qDalfsen] = inlezen_Dalfsen(invoerpad, infile_data_Dalfsen);
+% 
+% %==========================================================================
+% % Aggregeren naar maandwaarden (gegevens analoog aan Lobith)
+% 
+% [Dalfsen_maand] = aggregeer_naar_maand(qDalfsen, jaar, maand);
+% 
+% jaar_nw            = Dalfsen_maand(:,1);
+% maand_nw           = Dalfsen_maand(:,2);
+% qvecht_max         = Dalfsen_maand(:,4);
+% 
+% inhoud_tabel_Dalfsen   = [jaar_nw, maand_nw, qvecht_max];
+% 
+% save([uitvoerpad,'maandmaxima_Dalfsen.txt'],'inhoud_tabel_Dalfsen','-ascii')
+% 
+% 
+% %==========================================================================
+% % Schiphol
+% %==========================================================================
+% %Inlezen geldige data Schiphol (hele jaren).
+% 
+% [jaar,maand,dag,uur,datum, r,qdd,u,qup] = inlezen_Schiphol(invoerpad, infile_data_Schiphol);
+% 
+% %==========================================================================
+% % Aggregeren naar maandwaarden
+% 
+% [Schiphol_maand]   = aggregeer_naar_maand(u, jaar, maand);
+% 
+% jaar_nw            = Schiphol_maand(:,1);
+% maand_nw           = Schiphol_maand(:,2);
+% u_max              = Schiphol_maand(:,4);
+% 
+% inhoud_tabel_Schiphol   = [jaar_nw, maand_nw, u_max];
+% 
+% save([uitvoerpad,'maandmaxima_windsnelheid_Schiphol.txt'],'inhoud_tabel_Schiphol','-ascii')
+% 
+% %==========================================================================
+% % Hoek van Holland
+% %==========================================================================
+% %Inlezen geldige data HvH (hele jaren).
+% 
+% [jaar,maand,dag,uur,datum, m] = inlezen_HvH(invoerpad, infile_data_HvH);
+% 
+% %==========================================================================
+% % Aggregeren naar maandwaarden
+% 
+% [HvH_maand]   = aggregeer_naar_maand(m, jaar, maand);
+% 
+% jaar_nw            = HvH_maand(:,1);
+% maand_nw           = HvH_maand(:,2);
+% m_max              = HvH_maand(:,4);
+% 
+% inhoud_tabel_HvH   = [jaar_nw, maand_nw, m_max];
+% 
+% save([uitvoerpad,'maandmaxima_waterstand_HvH.txt'],'inhoud_tabel_HvH','-ascii')

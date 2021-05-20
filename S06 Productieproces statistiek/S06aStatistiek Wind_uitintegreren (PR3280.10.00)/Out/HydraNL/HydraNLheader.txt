@@ -1,0 +1,10 @@
+* De conditionele overschrijdingskans van de potentiële windsnelheid, gegeven de windrichting
+* voor een 12-uursperiode te STATION. METZONDER onzekerheid.
+* 
+* Het waterstandsbereik waarvoor de overschrijdingskansen zijn 0.0 m/s en 2.0 m/s tot 42.00 m/s
+* met een stapgrootte van 0.5 m/s.
+*
+* Door: G.W.F. Rongen van HKV lijn in water
+* Project: PR3280.10
+*
+* u (m/s)   30              60              90              120             150             180             210             240             270             300             330             360

@@ -1,0 +1,13 @@
+#!/bin/bash
+#$ -cwd
+#$ -N cons_checks
+
+#BSUB -J cons_checks
+#BSUB -oo cons_checks.o%J
+#BSUB -eo cons_checks.e%J
+#BSUB -n 8
+
+export PATH=/opt/conda/envs/myapp/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PYTHONPATH=/data/computations/python:$PYTHONPATH
+
+./run_consistency_per_loc.sh

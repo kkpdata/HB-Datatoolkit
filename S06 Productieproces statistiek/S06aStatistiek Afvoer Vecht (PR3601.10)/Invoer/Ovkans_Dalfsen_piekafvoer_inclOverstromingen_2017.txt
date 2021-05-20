@@ -1,0 +1,31 @@
+*
+* Overschrijdingskansen van piekafvoeren van de Vecht bij Dalfsen
+* Inclusief overstromingen langs de Vecht en de Nederlandse zijleidingen.
+*
+* Door:    C.P.M. Geerse van HKV lijn in water
+* Datum:   februari 2016
+* Project: PR3257.10
+* Status:  CONCEPT
+*
+* Zie voor beschrijving het memo:
+* Overschrijdingsfrequentie Vecht bij Dalfsen. Pragmatische aanpassing van de
+* statistiek voor overstromingen bovenstrooms. Chris Geerse, februari 2016.
+*
+* 
+* Basisduur trapezia: B = 30 dagen.
+*
+* Piekwaarde Vecht   overschrijdingskans
+*  Afvoer [m³/s]        [-]
+       0              1.000E+00
+     180              1.667E-01
+     400              2.401E-03
+     410              1.980E-03
+     420              1.633E-03
+     590              3.471E-05
+     600              2.509E-05
+     610              1.627E-05
+     620              9.943E-06
+     630              5.556E-06
+     640              2.284E-06
+     650              6.796E-07
+     700              1.584E-09

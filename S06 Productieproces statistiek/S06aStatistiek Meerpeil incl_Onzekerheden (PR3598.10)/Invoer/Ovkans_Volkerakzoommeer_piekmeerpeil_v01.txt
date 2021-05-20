@@ -1,0 +1,14 @@
+% 
+%  Overschrijdingskansen piekwaarde Volkerak-Zoommeer
+% 
+%  De getallen zijn ontleend aan:
+%  'Statistiek Zeeuwse meren voor Hydra-Zoet'.
+%  Rapport van mei 2012, PR1564.14. Auteur: C.P.M. Geerse.
+% 
+% 
+%         Piekwaarde           overschrijdingskans
+%           [m+NAP]                    [-]
+           -0.10                    1.0
+            0.07                    8.8889e-001
+            0.22                    1.1111e-001
+            0.94                    1.1111e-005

@@ -1,0 +1,11 @@
+%Status data  Concept with data cheked d.d. 10-02-2015    
+%Directions:  Omnidirectional    
+%Distribution type:  Return Period Table    
+%      
+%Note:  The return period has the unit given for the water level variable. In this case [1 months]    
+%      
+%Water level IJssel lake   Return period   Lake level rise (m)  
+-0.4      9.92E-01    0.000  
+0.05      6.00E+00    0.000  
+0.4       6.00E+01    0.000  
+1.293754  6.00E+05    0.00

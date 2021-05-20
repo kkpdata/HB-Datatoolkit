@@ -1,0 +1,9 @@
+* Overschrijdingskansen piekwaarde Borgharen (Hydra-NL). METZONDER statistische onzekerheid.
+* 
+* Basisduur trapezia: B = 30 dagen.
+* 
+* Door: G.W.F. Rongen van HKV lijn in water
+* Project: PR3280.20.09
+*
+* Piekwaarde    Overschrijdingskans
+*      [m3/s]       [-]

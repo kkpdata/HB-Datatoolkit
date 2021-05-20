@@ -1,0 +1,69 @@
+function GenerateSettingsMatFiles_Duinen(IDsFile, matFileDir)
+
+WaterSystem = 16;
+matFileName = '16_settings.mat';
+
+NNUM = xlsread(IDsFile);
+filter = NNUM(:,1) == WaterSystem;
+
+IDs = NNUM(filter,2);
+Xs = NNUM(filter,3);
+Ys = NNUM(filter,4);
+
+idx = isort(IDs);
+IDs = IDs(idx);
+Xs = Xs(idx);
+Ys = Ys(idx);
+
+%% Settings
+timeIntegration_MHW = 1;
+
+probMethod_MHW      = 1;
+
+FORMstart_MHW       = 4;
+
+DSminIter_MHW       = 10000;
+
+DSmaxIter_MHW       = 40000;
+
+DesTab_Min_MHW      = 3.5;
+
+DesTab_Max_MHW      = 6.0;
+
+%% generate
+NumSet  = [];
+TimeInt = [];
+DesTab  = [];
+iLength = 1;
+
+for iLoc = 1:numel(IDs)
+    NumSet  = [NumSet; IDs(iLoc)*ones(iLength,1), ...
+        1, ...
+        6, ...
+        probMethod_MHW ...
+        FORMstart_MHW ...
+        150*ones(iLength,1) ...
+        0.15*ones(iLength,1) ...
+        0.005*ones(iLength,1) ...
+        0.005*ones(iLength,1) ...
+        0.005*ones(iLength,1) ...
+        2*ones(iLength,1) ...
+        DSminIter_MHW ...
+        DSmaxIter_MHW ...
+        0.1*ones(iLength,1) ...
+        -6*ones(iLength,1) ...
+        6*ones(iLength,1) ...
+        25*ones(iLength,1)];
+    
+    TimeInt = [TimeInt; IDs(iLoc)*ones(iLength,1), ...
+        10, ...
+        timeIntegration_MHW];
+    
+    DesTab = [DesTab; IDs(iLoc)*ones(iLength,1), ...
+        10, ...
+        DesTab_Min_MHW, ...
+        DesTab_Max_MHW];
+end
+
+save('-mat', fullfile(matFileDir, matFileName), 'NumSet', 'TimeInt', 'DesTab')
+end

@@ -1,0 +1,12 @@
+%Status data	Fianl data, deliverd d.d. 14-07-2015
+%Directions:	Omnidirectional
+%Distribution type:	Exceedance Probability Table
+%	
+%Note:	The exceedance probability table has the unit given for the discharge variable. In this case [1 months]
+%	
+%Discharge Dalfsen	Exceedance probability
+%
+% Waarde voor 180 m3/s is toegevoegd
+0       1
+180     0.166667
+550	0.000133333

@@ -1,0 +1,13 @@
+#!/bin/bash
+#$ -cwd
+#$ -N MaakDB
+
+#BSUB -J MaakDB
+#BSUB -oo MaakDB.o%J
+#BSUB -eo MaakDB.e%J
+#BSUB -n 8
+
+export PATH=/opt/conda/envs/myapp/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PYTHONPATH=/data/computations/python:$PYTHONPATH
+
+./MaakDBuitWAQUA.sh

@@ -1,0 +1,22 @@
+%Status data	Final data delivered 14-07-2015
+%Directions:	Omnidirectional
+%Distribution type:	Exceedance Probability Table
+%	
+%Note:	The exceedance probability table has the unit given for the discharge variable. In this case [1 months]
+%	
+%Discharge Lith 	Exceedance probability
+1409	0.083333333
+1880	0.033333333
+2177	0.016666667
+2448	0.008333333
+2785	0.003333333
+3014	0.001666667
+3291	0.000666667
+3458	0.000333333
+3653	0.000133333
+3756	8.33333E-05
+3906	4.16667E-05
+4113	1.66667E-05
+4264	8.33333E-06
+4463	3.33333E-06
+4616	1.66667E-06

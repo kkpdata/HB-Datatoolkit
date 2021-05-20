@@ -1,0 +1,16 @@
+CreateDefProfile('01_bovenrijn_selectie');
+CreateDefProfile('02_bovenmaas_selectie');
+CreateDefProfile('03_benedenrijn_selectie');
+CreateDefProfile('04_benedenmaas_selectie');
+CreateDefProfile('05_ijsseldelta_selectie');
+CreateDefProfile('06_vechtdelta_selectie');
+CreateDefProfile('07_ijsselmeer_selectie');
+CreateDefProfile('08_markermeer_selectie');
+CreateDefProfile('09_waddenzee_oost_selectie');
+CreateDefProfile('10_waddenzee_west_selectie');
+CreateDefProfile('11_hollandsekust_noord_selectie');
+CreateDefProfile('12_hollandsekust_midden_selectie');
+CreateDefProfile('13_hollandsekust_zuid_selectie');
+CreateDefProfile('15_westerschelde_selectie');
+CreateDefProfile('17_europoort_selectie');
+CreateDefProfile('18_bovenmaas_selectie');

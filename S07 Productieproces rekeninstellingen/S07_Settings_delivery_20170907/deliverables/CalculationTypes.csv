@@ -1,0 +1,12 @@
+CalculationTypeID; CalculationType
+0; Toetspeil
+1; QVariant
+2; Hs
+3; Tp
+4; Tm-1,0
+5; HBN
+6; GrasBinnenTalud
+7; KwHoogte
+8; KwSluiten
+9; KwPuntconstructies
+10; Duinen

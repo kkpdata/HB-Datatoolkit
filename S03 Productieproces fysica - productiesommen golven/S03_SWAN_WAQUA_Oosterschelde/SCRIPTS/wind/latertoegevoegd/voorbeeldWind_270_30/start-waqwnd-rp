@@ -1,0 +1,17 @@
+#!/bin/sh
+
+export UI_NAME=linux64
+export SIMONADIR=/opt/simona/simona2016
+export PATH="$SIMONADIR/bin:$PATH"
+export LD_LIBRARY_PATH=/opt/simona/extern/linux64:$LD_LIBRARY_PATH
+
+#cd $SGE_O_WORKDIR
+
+
+waqwnd.pl \
+-inpfmt ASCII                    -runid tst          -exp wind \
+-KNMI "WAQH_*"                   -date_fc 20600101   -time 0000 \
+-stress -1                       -timzon MET         -convert2stress N \
+-gridflag 2                      -overwrite y        -windidfile windid \
+-coordsystem WGS84               -back n             -bufsize 10
+

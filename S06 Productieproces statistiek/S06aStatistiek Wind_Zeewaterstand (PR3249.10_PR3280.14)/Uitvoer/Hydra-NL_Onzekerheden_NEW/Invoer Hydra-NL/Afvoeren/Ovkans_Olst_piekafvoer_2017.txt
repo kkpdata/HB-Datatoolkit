@@ -1,0 +1,29 @@
+*
+* Overschrijdingskansen piekwaarde Olst (Hydra-NL). Zonder onzekerheden.
+*
+* Door: C.P.M. Geerse van HKV lijn in water
+* Datum: 11 december 2015
+*
+* Zie voor beschrijving het rapport:
+* Werkwijze uitintegreren onzekerheden basisstochasten voor Hydra-NL.
+* Afvoeren, meerpeilen, zeewaterstanden en windsnelheden. 
+* Chris Geerse. HKV Lijn in Water, december 2015.
+* 
+* Basisduur trapezia: B = 30 dagen.
+* 
+* Piekwaarde  Overschrijdingskans
+*    [m3/s]          [-]
+        200          1.000E+00
+        600          0.303
+        787          0.083333333
+        1090         0.033333333
+        1282         0.016666667
+        1603         0.005555556
+        1972         0.001666667
+        2235         0.000555556
+        2423         0.000166667
+        2453         0.000133333
+        2581         5.55556E-05
+        2760         1.66667E-05
+        2930         5.55556E-06
+        3120         1.66667E-06
