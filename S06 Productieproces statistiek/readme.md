@@ -1,6 +1,6 @@
-In deze map vindt u tools die ondersteunend zijn aan stap S06 'Productieproces statistiek', zoals beschreven in het [PBO HB data Stappenplan](https://github.com/kkpdata/HB-Datatoolkit/tree/master/A00&#32;Documentatie#11205758-014-GEO-0001_v1.0-PBO&#32;HB&#32;data&#32;stappenplan&#32;13.pdf). 
+In deze map vindt u tools die ondersteunend zijn aan stap S06 'Productieproces statistiek', zoals beschreven in het [PBO HB data Stappenplan](https://github.com/kkpdata/HB-Datatoolkit/blob/main/A00%20Documentatie/PBO%20HB%20data%20stappenplan%2013%20(11205758-014-GEO-0001_v1.0).pdf). 
 
-Een korte beschrijving van de tools vindt u in [Toolkit catalogus yyyymmdd](https://github.com/kkpdata/HB-Datatoolkit/tree/master/A00&#32;Documentatie).
+Een korte beschrijving van de tools vindt u in [Toolkit catalogus yyyymmdd](https://github.com/kkpdata/HB-Datatoolkit/tree/main/A00%20Documentatie).
 
 Het is waardevol om de aangeleverde tools van stap S06 'Productieproces statistiek' om te zetten in een 'kookboek statistiek', zodat naast de uitgebreide documentatie rond de productie van statistiek van de basisstochasten (die nu al beschikbaar is) op termijn naast een toolkit van tools ook een gedetailleerd stappenplan (het kookboek) voor de statistiek van basisstochasten beschikbaar is voor de komende toetsronden (monitoringsronden). In een dergelijk kookboek spreek je af:
 •	Wat de basisstochasten (incl. locaties) zijn,
