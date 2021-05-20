@@ -1,2 +1,2 @@
 # HB-Datatoolkit
-Data toolkit voor Hydraulische Belastingen
+Data Toolkit voor Hydraulische Belastingen
