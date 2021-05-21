@@ -1,5 +1,5 @@
 In deze map vindt u tools die ondersteunend zijn aan stap S03 'Productiesommen golven (productieproces fysica)', zoals beschreven in het [PBO HB data Stappenplan](https://github.com/kkpdata/HB-Datatoolkit/blob/main/A00%20Documentatie/PBO%20HB%20data%20stappenplan%2013%20(11205758-014-GEO-0001_v1.0).pdf). 
 
-Een korte beschrijving van de tools vindt u in [Toolkit catalogus yyyymmdd](https://github.com/kkpdata/HB-Datatoolkit/blob/main/A00%20Documentatie). De precieze bestandsnaam van de catalogus kan daardoor wijzigen. Verwijzingen zijn daarom naar de map waarin de catalogus bestanden staan. De gebruiker kan zelf de laatste versie selecteren.
+Een korte beschrijving van de tools vindt u in [Toolkit catalogus yyyymmdd.xlsx](https://github.com/kkpdata/HB-Datatoolkit/blob/main/A00%20Documentatie). De precieze bestandsnaam van de catalogus kan wijzigen nadat nieuwe tools worden opgeleverd. Verwijzingen zijn daarom naar de map waarin de catalogus bestanden staan. De gebruiker kan zelf de laatste versie selecteren.
 
 Een meer algemene beschrijving van de inhoud, het doel en de totstandkoming van de toolkit vindt u in de [hoofdmap](https://github.com/kkpdata/HB-Datatoolkit#readme).
