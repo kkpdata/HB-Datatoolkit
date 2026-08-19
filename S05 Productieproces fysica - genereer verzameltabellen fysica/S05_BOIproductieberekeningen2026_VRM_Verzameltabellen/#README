@@ -1,0 +1,32 @@
+2026 01 15
+
+scripts gedraaid op de Jupyter machine in de "stable" environment
+
+Overzetten scritps om de data in te lezen, alleen de scripts die nodig zijn voor de uitgevoerde stappen
+1	wel				
+	AANPASSINGEN: 	pathnames, toevoegen automatische link naar parent directory (uitgaande van dat
+						de Scripts subdirectory in dezelfde map staat als de NWM directory met alle data
+					pathnames met / ipv \ (ivm met de console, lijkt stabieler)
+1a	nog niet
+3	wel
+	AANPASSINGEN: 	in de plaatjes functie de eerste if loop (voor de naam van het gebied) eruit gehaald
+						mbv dict voor de koppeltabellen en formatting van de pathnames
+					aanpassing regel 153
+					elif trajectnaam == 'hoge gronden Veluwerandmeren':
+                    # volgnummers = np.arange(1,296)
+                    volgnummers = np.arange(1,np.size(bodemhoogten)+1)
+					uitvoeren voor bakjes3
+4	wel
+	AANPASSINGEN: 	Leesbaarder maken, en algemene parameters buiten de loop halen
+	
+8a 	wel
+	AANPASSINGEN: 	juiste pathnames en aanpassen van de locator in de dataframes om warnings te voorkomen
+					en Leesbaarder maken met automatische paden
+
+8b 	wel
+	AANPASSINGEN: 
+					oplossen van de volgende warning
+					FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and 
+						will be removed in a future version. 
+						Use ``sep='\s+'`` instead
+ 
